@@ -14,7 +14,7 @@ Unlike traditional monitoring systems, AugurNet:
 
 ## Architecture
 
-![Architecture Diagram](https://media.licdn.com/dms/image/v2/D4E12AQHt8ad_DAVfRg/article-cover_image-shrink_720_1280/B4EZ3reh3LH8AI-/0/1777772147084?e=1779321600&v=beta&t=qiCdwSdKQf6Aia6jcfhdegneBUKMol5lFL-xuJ-i6so))
+![Architecture Diagram](https://media.licdn.com/dms/image/v2/D4E12AQHt8ad_DAVfRg/article-cover_image-shrink_720_1280/B4EZ3reh3LH8AI-/0/1777772147084?e=1779321600&v=beta&t=qiCdwSdKQf6Aia6jcfhdegneBUKMol5lFL-xuJ-i6so)
 ```
 Telemetry → Encoder → Polysemantic Latent Space
          → Generative Hypothesis Engines (GHEs)
