@@ -144,16 +144,6 @@ Training progresses through:
 * Adversarial noise
 * Non-stationary chaos
 
-## Production Deployment
-
-Recommended stack:
-
-* Kubernetes (EKS/GKE)
-* Kafka / Pulsar
-* Redis / Feature Store
-* Neo4j (causal graph)
-* Triton Inference Server
-
 ## Constraints
 
 To ensure stability:
