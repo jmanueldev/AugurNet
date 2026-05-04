@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+
+  redis:
+    image: redis:7
+
+  neo4j:
+    image: neo4j:5
+    environment:
+      - NEO4J_AUTH=neo4j/password
+    ports:
+      - "7687:7687"
+      - "7474:7474"
+
+  ghe1:
+    build: ./ghe_service
+    ports:
+      - "8001:8001"
+
+  ghe2:
+    build: ./ghe_service
+    ports:
+      - "8002:8002"
