@@ -2,8 +2,6 @@
 
 **A Polysemantic Generative AI Architecture for Noise Suppression and Causal Diagnosis in High-Volume Log Systems**
 
----
-
 ## Overview
 
 AugurNet is a generative AI–driven observability system designed for **high-noise, high-scale distributed environments**.
@@ -14,8 +12,6 @@ Unlike traditional monitoring systems, AugurNet:
 * Generates multiple causal hypotheses in parallel
 * Reconstructs latent failure structures from noisy telemetry
 
----
-
 ## Architecture
 
 ```
@@ -25,8 +21,6 @@ Telemetry → Encoder → Polysemantic Latent Space
          → Causal Graph Builder
          → Diagnosis API
 ```
-
----
 
 ## Core Components
 
@@ -66,8 +60,6 @@ Telemetry → Encoder → Polysemantic Latent Space
 * FastAPI-based inference endpoint
 * Returns ranked root causes + explanations
 
----
-
 ## Quick Start
 
 ### 1. Clone repo
@@ -98,8 +90,6 @@ curl -X POST http://localhost:8000/diagnose \
 -d '[{"message":"service timeout","metrics":{"latency":1200}}]'
 ```
 
----
-
 ## Example Output
 
 ```json
@@ -114,8 +104,6 @@ curl -X POST http://localhost:8000/diagnose \
   ]
 }
 ```
-
----
 
 ## Development
 
@@ -138,8 +126,6 @@ class HypothesisEngine:
 
 3. Register in `engine/orchestrator.py`
 
----
-
 ## Training
 
 ### Run training loop
@@ -157,8 +143,6 @@ Training progresses through:
 * Adversarial noise
 * Non-stationary chaos
 
----
-
 ## Production Deployment
 
 Recommended stack:
@@ -169,8 +153,6 @@ Recommended stack:
 * Neo4j (causal graph)
 * Triton Inference Server
 
----
-
 ## Constraints
 
 To ensure stability:
@@ -179,8 +161,6 @@ To ensure stability:
 * Latency budget: < 500ms
 * Must include deterministic fallback logic
 
----
-
 ## Observability
 
 AugurNet exports:
@@ -188,8 +168,6 @@ AugurNet exports:
 * Hypothesis entropy
 * Latent drift metrics
 * Causal graph stability
-
----
 
 ## Roadmap
 
